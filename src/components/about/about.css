@@ -1,0 +1,75 @@
+.about-container {
+  overflow: hidden;
+  background-color: black;
+  margin: 0;
+}
+.headings {
+  height: 30vh;
+  background-image: url(contact1.jpeg);
+  background-size: fit-content;
+  background-attachment: fixed;
+  padding: 10px;
+}
+
+.headings h1 {
+  text-align: center;
+  color: goldenrod;
+  font-size: 40px;
+  margin: 3rem 0 1rem;
+  letter-spacing: 4px;
+}
+.headings p {
+  color: white;
+  font-size: 25px;
+  text-align: center;
+}
+.headings .line {
+  width: 18%;
+  border-top: 3px solid goldenrod;
+  margin: 5px auto;
+}
+.img-container {
+  margin: 3rem 29%;
+}
+.img-container img {
+  width: 100%;
+  border-radius: 20px;
+  margin-inline: auto;
+}
+.about-text {
+  margin: 0 8rem;
+  padding-bottom: 1rem;
+}
+
+.about-text p {
+  color: white;
+  font-size: 20px;
+  /* letter-spacing: 1px; */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about-container2 {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+.picture-container img {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    height: fit-content;
+  }
+  .img-container {
+    margin: 2rem 10%;
+  }
+
+  .about-text {
+    margin: 0 10%;
+  }
+
+  .about-text p {
+    letter-spacing: 0;
+  }
+}

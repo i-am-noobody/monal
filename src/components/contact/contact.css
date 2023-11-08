@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
+/* .contact {
+  height: 100vh;
+} */
+.top-container {
+  height: 30vh;
+  background-image: url(contact1.jpeg);
+  background-size: fit-content;
+  background-attachment: fixed;
+  padding: 10px;
+}
+.top-container h1 {
+  font-size: 50px;
+  color: goldenrod;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 2rem auto 1rem;
+}
+.top-container p {
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  letter-spacing: 3px;
+}
+
+.book-container {
+  background-color: black;
+  height: 80vh;
+}
+
+.opening {
+  margin: 0px 40%;
+  display: flex;
+  gap: 50px;
+  max-width: 500px;
+  background: none;
+}
+.opening h3 {
+  color: goldenrod;
+  font-size: 20px;
+}
+
+.opening p {
+  font-size: 16px;
+  color: white;
+}
+
+.days {
+  margin: 30px 0;
+}
+.bottom-container {
+  height: 70vh;
+  background-color: black;
+  padding: 2rem 0;
+}
+
+.bottom-container .topic h2 {
+  font-family: "Dancing Script", cursive;
+  color: white;
+  text-align: center;
+  font-size: 4rem;
+}
+
+.bottom-container .topic p {
+  color: white;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.line {
+  width: 10%;
+  border: 2px solid goldenrod;
+  margin: 2rem auto;
+}
+
+.input-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 0 2rem;
+  justify-content: center;
+}
+
+.input-section .single-input {
+  display: block;
+}
+
+.input-section .single-input p {
+  color: white;
+  margin: 0.3rem 0;
+  font-size: 18px;
+}
+
+.input-section .single-input > input {
+  padding: 0.7rem 2rem;
+  background: transparent;
+  border: 1px solid white;
+  width: max-content;
+}
+#myInput {
+  color: white;
+}
+
+#myInput::-webkit-inner-spin-button,
+#myInput::-webkit-outer-spin-button,
+#myInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.reservation-button {
+  background-color: goldenrod;
+  padding: 1rem 2rem;
+  color: white;
+  font-size: 18px;
+  border-radius: 1rem;
+  color: black;
+  font-weight: 600;
+  display: flex;
+  margin: 3rem auto;
+}
+
+@media (max-width: 900px) {
+  .bottom-container {
+    height: fit-content;
+    padding-bottom: 2rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .bottom-container {
+    height: fit-content;
+  }
+}
+@media (max-width: 600px) {
+  .top-container h1 {
+    margin: 1rem auto;
+  }
+  .top-container p {
+    font-size: 1rem;
+  }
+}

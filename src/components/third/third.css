@@ -1,0 +1,68 @@
+.third-container {
+  background-color: black;
+  box-sizing: border-box;
+}
+
+.lefts-container {
+  height: 30vh;
+  background-image: url(bg2.jpg);
+  background-size: fit-content;
+  background-attachment: fixed;
+  padding: 10px;
+}
+
+.lefts-container h1 {
+  font-size: 50px;
+  color: goldenrod;
+  text-align: center;
+  margin: 50px auto 0;
+}
+
+.lefts-container p {
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.rights-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin: 40px 20px 0px 20px; */
+}
+
+.rights-container .box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 25px 10px;
+  align-items: flex-start;
+}
+.rights-container .box .dream {
+  display: flex;
+  flex-direction: column;
+  width: 32.5%;
+}
+
+.rights-container .box .dream img {
+  width: 100%;
+  padding-bottom: 15px;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 769px) {
+  .rights-container .box {
+    flex-direction: column;
+  }
+  .rights-container .box .dream {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .lefts-container h1 {
+    margin: 20px 0 0 0;
+  }
+}
