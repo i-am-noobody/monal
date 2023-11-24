@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./second.css";
 
 const Second = () => {
@@ -21,40 +21,28 @@ const Second = () => {
               <ul className="list-title">
                 <li>
                   {" "}
-                  <Link
-                    activeClassName="active"
-                    onClick={() => updateToggle(1)}
-                  >
+                  <NavLink onClick={() => updateToggle(1)}>
                     {" "}
                     <p>Coffee</p>
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
                   {" "}
-                  <Link
-                    activeClassName="active"
-                    onClick={() => updateToggle(2)}
-                  >
+                  <NavLink onClick={() => updateToggle(2)}>
                     <p>Snacks</p>
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
                   {" "}
-                  <Link
-                    activeClassName="active"
-                    onClick={() => updateToggle(3)}
-                  >
+                  <NavLink onClick={() => updateToggle(3)}>
                     <p>Momo</p>
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
                   {" "}
-                  <Link
-                    activeClassName="active"
-                    onClick={() => updateToggle(4)}
-                  >
+                  <NavLink onClick={() => updateToggle(4)}>
                     <p>Drinks</p>
-                  </Link>
+                  </NavLink>
                 </li>
               </ul>
               <div className="flex-menu">

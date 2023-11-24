@@ -1,6 +1,7 @@
 .third-container {
   background-color: black;
   box-sizing: border-box;
+  height: fit-content;
 }
 
 .lefts-container {
@@ -9,13 +10,17 @@
   background-size: fit-content;
   background-attachment: fixed;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.8rem;
 }
 
 .lefts-container h1 {
   font-size: 50px;
-  color: goldenrod;
+  color: #9d8730;
   text-align: center;
-  margin: 50px auto 0;
+  /* margin: 50px auto 0; */
 }
 
 .lefts-container p {
@@ -31,38 +36,63 @@
   justify-content: center;
   align-items: center;
   /* margin: 40px 20px 0px 20px; */
+  padding: 2rem 4rem;
 }
 
-.rights-container .box {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 25px 10px;
-  align-items: flex-start;
-}
-.rights-container .box .dream {
-  display: flex;
-  flex-direction: column;
-  width: 32.5%;
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 5vw);
+  grid-gap: 15px;
 }
 
-.rights-container .box .dream img {
+.gallery__img {
   width: 100%;
-  padding-bottom: 15px;
-  border-radius: 10px;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
 }
 
-@media only screen and (max-width: 769px) {
-  .rights-container .box {
-    flex-direction: column;
-  }
-  .rights-container .box .dream {
-    width: 100%;
-  }
+.gallery__img:hover {
+  opacity: 1;
+}
+.gallery__item--1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+.gallery__item--2 {
+  grid-column-start: 4;
+  grid-column-end: 8;
+  grid-row-start: 1;
+  grid-row-end: 8;
 }
 
-@media (max-width: 500px) {
-  .lefts-container h1 {
-    margin: 20px 0 0 0;
-  }
+.gallery__item--3 {
+  grid-column-start: 8;
+  grid-column-end: 12;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+
+.gallery__item--4 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 8;
+}
+
+.gallery__item--5 {
+  grid-column-start: 8;
+  grid-column-end: 10;
+  grid-row-start: 5;
+  grid-row-end: 8;
+}
+
+.gallery__item--6 {
+  grid-column-start: 10;
+  grid-column-end: 12;
+  grid-row-start: 5;
+  grid-row-end: 8;
 }
