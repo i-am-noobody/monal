@@ -4,24 +4,28 @@ import "./about.css";
 const About = () => {
   return (
     <>
-      <div className="about-container">
-        <div className="headings">
+      <div>
+        <div className="section1">
           <h1>About Us</h1>
-          <p>Know who we are and what we serve</p>
+          <p>Listen to our story with US.</p>
         </div>
-        <div className="img-container">
-          <img src="chef.jpg" />
-        </div>
-        <div className="about-text">
-          <p>
-            At our restaurant, you can find representatives of the most popular
-            cuisines on a worldwide scale. Whether you want a usual or exotic
-            dish, don’t hesitate to leaf through our diverse menu and order what
-            you like. We use only healthy ingredients, thus making our meals
-            suitable for people who keep an eye on their ration or follow a
-            diet. Are you a diner with special dietary needs? Then, you must pay
-            a visit to our top-notch restaurant and try our wholesome food.
-          </p>
+        <div className="grid">
+          <div className="left">
+            <img src="chef4.jpg" />
+          </div>
+          <div className="right">
+            <h2>Best Food</h2>
+            <p>From our chief chef</p>
+            <hr className="lines" />
+            <span>
+              The work is always in a full swing in our kitchen! Everyone here
+              is on fire when it comes to cooking. The best cooks all over the
+              world are gathered here together to create something really
+              special to impress you deeply. <br /> <br />
+              The latest in cooking fashion, best recipes and fresh goods, this
+              is the formula of our success.
+            </span>
+          </div>
         </div>
       </div>
     </>

@@ -1,32 +1,37 @@
 .section1 {
   height: 30vh;
-  background-image: url(bg3.jpg);
+  background-image: url(section2.jpg);
   background-size: fit-content;
   background-attachment: fixed;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.8rem;
 }
 
 .section1 h1 {
-  font-size: 50px;
-  color: goldenrod;
+  font-size: 3rem;
+  color: #9d8730;
   text-align: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  margin: 20px auto;
+  /* margin: 20px auto; */
 }
 .section1 p {
-  font-size: 30px;
+  font-size: 2rem;
   text-align: center;
   color: white;
   letter-spacing: 3px;
 }
 
 .section2 {
-  height: 100vh;
+  /* height: 100vh; */
   background-color: black;
 }
 
 .all {
-  height: max(fit-content, 100vh);
+  height: min(fit-content, 100vh);
   padding: 30px 0;
 }
 .menu-container {
@@ -52,23 +57,18 @@
   list-style: none;
   color: white;
 }
-.list-title li p {
-  color: goldenrod;
-  text-decoration: none;
-}
-.active {
-  color: goldenrod;
-}
+
 .grid > li {
   padding-bottom: 5px;
 }
 
+.list-title .active {
+  color: #9d8730;
+}
 .list-title li:hover {
-  color: white;
+  color: #9d8730;
 }
-.list-title li:active {
-  color: white;
-}
+
 /* .menu-img{
     display: flex;
     justify-content: space-around;
@@ -101,12 +101,12 @@
   grid-template-columns: 50% 50%;
   column-gap: 40px;
   row-gap: 0px;
-  margin-inline: max(60px, 20px);
+  margin-inline: max(60px, 10px);
 }
 
 .show-content h3 {
   font-size: 30px;
-  color: goldenrod;
+  color: #9d8730;
   margin: 20px 60px;
   background: none;
 }
@@ -117,7 +117,7 @@
 .single-item {
   width: 90%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .single-item p {
   text-wrap: nowrap;
@@ -193,12 +193,10 @@ h5 {
 }
 
 @media (max-width: 500px) {
-  .section1 h1 {
-    margin: 0;
+  .single-item {
+    width: 100%;
   }
-  .section1 p {
-    font-size: 1rem;
-  }
+
   .textss p {
     font-size: 0.6rem;
   }
@@ -207,5 +205,15 @@ h5 {
   .show-content {
     margin: 2rem 0;
     /* overflow: hidden; */
+  }
+
+  .grids li {
+    list-style: none;
+  }
+  .single-item {
+    width: 100%;
+  }
+  .single-item .textss p {
+    text-align: left;
   }
 }

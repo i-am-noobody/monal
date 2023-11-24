@@ -19,28 +19,23 @@ const Contact = () => {
           <div className="input-section">
             <div className="single-input">
               <p>Name</p>
-              <input type="text" id="myInput" required placeholder="Name" />
+              <input type="text" required placeholder="Name" />
             </div>
             <div className="single-input">
               <p>Email</p>
-              <input type="text" id="myInput" required placeholder="Email" />
+              <input type="text" required placeholder="Email" />
             </div>
             <div className="single-input">
               <p>Date</p>
-              <input type="date" id="myInput" required />
+              <input type="date" required />
             </div>
             <div className="single-input">
               <p>Time</p>
-              <input type="time" id="myInput" required />
+              <input type="time" required />
             </div>
             <div className="single-input">
               <p>Persons</p>
-              <input
-                type="number"
-                id="myInput"
-                required
-                placeholder="Number of People"
-              />
+              <input type="number" required placeholder="Number of People" />
             </div>
           </div>
           <button className="reservation-button"> Make a Reservation </button>
