@@ -7,7 +7,7 @@ const Contact = () => {
       <div className="contact-container">
         <div className="top-container">
           <h1>Book Now</h1>
-          <p>We are always at your service.Welcome here</p>
+          <p>We are always at your service</p>
         </div>
         <div className="bottom-container">
           <div className="topic">

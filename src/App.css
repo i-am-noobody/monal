@@ -3,9 +3,19 @@
 * {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth; /* Enable smooth scrolling */
+  transition: scroll-behavior 1s ease-in-out;
 }
 
 /* font-family: Montserrat, sans-serif; */
 /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 /* font-family: 'Great Vibes' !important; */
 /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+a {
+  text-decoration: none;
+}
+
+* {
+  scroll-behavior: smooth; /* Enable smooth scrolling */
+  transition: scroll-behavior 1s ease-in-out; /* Adjust the speed by changing the duration (0.5s in this example) and timing function */
+}

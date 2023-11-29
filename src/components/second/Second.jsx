@@ -1,16 +1,19 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./second.css";
 
 const Second = () => {
   const [toggle, setToggle] = useState(1);
+  const [active, setActive] = useState(1);
 
   function updateToggle(id) {
     setToggle(id);
+    setActive(id);
   }
+
   return (
     <>
-      <div className="second-container" id="second">
+      <div className="second-container" id="menu">
         <div className="section1">
           <h1>Our Menu</h1>
           <p>Breakfast - Lunch -Dinner</p>
@@ -20,29 +23,36 @@ const Second = () => {
             <div className="menu-container">
               <ul className="list-title">
                 <li>
-                  {" "}
-                  <NavLink onClick={() => updateToggle(1)}>
-                    {" "}
-                    <p>Coffee</p>
-                  </NavLink>
+                  <Link
+                    className={`tab ${active == 1 ? "active" : ""}`}
+                    onClick={() => updateToggle(1)}
+                  >
+                    <a>coffee</a>
+                  </Link>
                 </li>
                 <li>
-                  {" "}
-                  <NavLink onClick={() => updateToggle(2)}>
-                    <p>Snacks</p>
-                  </NavLink>
+                  <Link
+                    onClick={() => updateToggle(2)}
+                    className={`tab ${active === 2 ? "active" : ""}`}
+                  >
+                    <a>Snacks</a>
+                  </Link>
                 </li>
                 <li>
-                  {" "}
-                  <NavLink onClick={() => updateToggle(3)}>
-                    <p>Momo</p>
-                  </NavLink>
+                  <Link
+                    className={`tab ${active === 3 ? "active" : ""}`}
+                    onClick={() => updateToggle(3)}
+                  >
+                    <a>Momo</a>
+                  </Link>
                 </li>
                 <li>
-                  {" "}
-                  <NavLink onClick={() => updateToggle(4)}>
-                    <p>Drinks</p>
-                  </NavLink>
+                  <Link
+                    className={`tab ${active === 4 ? "active" : ""}`}
+                    onClick={() => updateToggle(4)}
+                  >
+                    <a>Drinks</a>
+                  </Link>
                 </li>
               </ul>
               <div className="flex-menu">
@@ -80,7 +90,7 @@ const Second = () => {
                     </li>
                     <li>
                       <div className="single-item">
-                        <p> Dopio</p>
+                        <p>Parautha</p>
                         <span class="dots">
                           ....................................................................
                         </span>
@@ -95,7 +105,7 @@ const Second = () => {
                     </li>
                     <li>
                       <div className="single-item">
-                        <p> Dopio</p>
+                        <p> Naan</p>
                         <span class="dots">
                           ....................................................................
                         </span>
@@ -160,7 +170,7 @@ const Second = () => {
                   <div className="grids">
                     <li>
                       <div className="single-item">
-                        <p> Dopio</p>
+                        <p> Espresso</p>
                         <span class="dots">
                           ....................................................................
                         </span>
@@ -190,7 +200,7 @@ const Second = () => {
                     </li>
                     <li>
                       <div className="single-item">
-                        <p> Dopio</p>
+                        <p>Americano</p>
                         <span class="dots">
                           ....................................................................
                         </span>
@@ -205,7 +215,7 @@ const Second = () => {
                     </li>
                     <li>
                       <div className="single-item">
-                        <p> Dopio</p>
+                        <p>Caramel Latte</p>
                         <span class="dots">
                           ....................................................................
                         </span>
@@ -220,7 +230,7 @@ const Second = () => {
                     </li>
                     <li>
                       <div className="single-item">
-                        <p> Dopio</p>
+                        <p> Mocha</p>
                         <span class="dots">
                           ....................................................................
                         </span>
@@ -269,7 +279,7 @@ const Second = () => {
                   <div className="grids">
                     <li>
                       <div className="single-item">
-                        <p> Dopio</p>
+                        <p>Daal</p>
                         <span class="dots">
                           ....................................................................
                         </span>
@@ -284,7 +294,7 @@ const Second = () => {
                     </li>
                     <li>
                       <div className="single-item">
-                        <p> Dopio</p>
+                        <p> Nepali Khana</p>
                         <span class="dots">
                           ....................................................................
                         </span>
@@ -299,7 +309,7 @@ const Second = () => {
                     </li>
                     <li>
                       <div className="single-item">
-                        <p> Dopio</p>
+                        <p> Dhedo</p>
                         <span class="dots">
                           ....................................................................
                         </span>
@@ -314,7 +324,7 @@ const Second = () => {
                     </li>
                     <li>
                       <div className="single-item">
-                        <p> Dopio</p>
+                        <p>Gundruk</p>
                         <span class="dots">
                           ....................................................................
                         </span>
@@ -379,7 +389,7 @@ const Second = () => {
                   <div className="grids">
                     <li>
                       <div className="single-item">
-                        <p> Dopio</p>
+                        <p>Burger</p>
                         <span class="dots">
                           ....................................................................
                         </span>
@@ -394,7 +404,7 @@ const Second = () => {
                     </li>
                     <li>
                       <div className="single-item">
-                        <p> Dopio</p>
+                        <p>Pizza</p>
                         <span class="dots">
                           ....................................................................
                         </span>
@@ -409,7 +419,7 @@ const Second = () => {
                     </li>
                     <li>
                       <div className="single-item">
-                        <p> Dopio</p>
+                        <p>Sizzler</p>
                         <span class="dots">
                           ....................................................................
                         </span>
@@ -424,7 +434,7 @@ const Second = () => {
                     </li>
                     <li>
                       <div className="single-item">
-                        <p> Dopio</p>
+                        <p>French Fries</p>
                         <span class="dots">
                           ....................................................................
                         </span>
@@ -439,7 +449,7 @@ const Second = () => {
                     </li>
                     <li>
                       <div className="single-item">
-                        <p> Dopio</p>
+                        <p></p>
                         <span class="dots">
                           ....................................................................
                         </span>

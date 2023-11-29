@@ -1,25 +1,24 @@
 .section1 {
   height: 30vh;
-  background-image: url(section2.jpg);
+  background-image: url(sec2.jpeg);
   background-size: fit-content;
   background-attachment: fixed;
   padding: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  gap: 1.8rem;
 }
 
 .section1 h1 {
-  font-size: 3rem;
+  font-size: 50px;
   color: #9d8730;
   text-align: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  /* margin: 20px auto; */
+  /* margin: 2rem auto 1rem; */
 }
 .section1 p {
-  font-size: 2rem;
+  font-size: 1.6rem;
   text-align: center;
   color: white;
   letter-spacing: 3px;
@@ -36,38 +35,42 @@
 }
 .menu-container {
   margin: 0px auto;
+  padding: 2rem 0;
 }
 
 .list-title {
   display: flex;
-  flex-wrap: nowrap;
-  gap: 2rem;
-  row-gap: 0.5rem;
-  display: flex;
+  /* flex-wrap: wrap; */
   justify-content: center;
-  text-decoration: none;
+  gap: 3rem;
+  list-style: none;
 }
 
-.list-title li {
+.tab {
   font-size: 18px;
-  margin: 2rem 1rem;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 2px;
   list-style: none;
-  color: white;
+  color: #9d8730;
 }
 
-.grid > li {
+.tab a:hover {
+  color: white;
+}
+.tab.active {
+  color: white;
+}
+.grids {
+  padding-top: 1rem;
+}
+.grids > li {
   padding-bottom: 5px;
 }
 
-.list-title .active {
-  color: #9d8730;
-}
-.list-title li:hover {
-  color: #9d8730;
-}
+/* .list-title .active p:hover {
+  color: white;
+} */
 
 /* .menu-img{
     display: flex;
@@ -78,17 +81,13 @@
     height: 400px;
     margin: 45px 0px;
 } */
-.food {
+/* .food {
   color: white;
   font-size: 45px;
   margin: 15px 60px;
   background: none;
-}
-/* .flex-menu{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    
 } */
+
 .first-list {
   display: none;
 }
@@ -101,7 +100,11 @@
   grid-template-columns: 50% 50%;
   column-gap: 40px;
   row-gap: 0px;
-  margin-inline: max(60px, 10px);
+  padding: 0 4rem;
+  /* margin-inline: max(60px, 10px); */
+}
+.grids li {
+  list-style: none;
 }
 
 .show-content h3 {
@@ -117,7 +120,7 @@
 .single-item {
   width: 90%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .single-item p {
   text-wrap: nowrap;
@@ -128,14 +131,13 @@
   overflow: hidden;
 }
 .textss {
-  color: white;
-  display: block;
-  /* padding: 0 2rem; */
-  margin: 1rem 2rem 0 0;
-  opacity: 0.7;
+  margin-top: 1rem;
 }
 .grids .textss p {
   font-size: 16px;
+  color: white;
+  opacity: 0.6;
+  /* margin-top: 0.5rem; */
 }
 .show-content li p {
   color: white;
@@ -157,16 +159,10 @@ h5 {
   background: none;
 }
 
-/* .dot{
-    height: 2px;
-    width: 200px;
-    margin-top: 14px;
-    border-bottom: 2px dotted white;
-} */
-
 @media (max-width: 830px) {
   .grids {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
 
   .section2 {
@@ -175,10 +171,10 @@ h5 {
 }
 @media screen and (max-width: 800px) {
   .list-title {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 1rem;
+  }
+  .grids {
+    padding: 1rem;
   }
   .list-title li {
     margin: 0;
@@ -190,30 +186,56 @@ h5 {
   .grids {
     grid-template-columns: 100%;
   }
+  .textss {
+    padding: 1rem 0;
+  }
 }
 
-@media (max-width: 500px) {
-  .single-item {
-    width: 100%;
+@media (max-width: 550px) {
+  .section1 h1 {
+    font-size: 2.5rem;
   }
-
-  .textss p {
-    font-size: 0.6rem;
+  .section1 p {
+    font-size: 1.6rem;
+  }
+  .list-title {
+    flex-wrap: wrap;
+  }
+  .grids {
+    padding: 0 0rem;
+    margin-top: 3rem;
+    column-gap: 1rem;
+    justify-content: center;
+  }
+  .grids li {
+    padding: 0 1.2rem;
+  }
+  .single-item {
+    justify-content: space-around;
+    padding: 0;
+    gap: 0rem;
+  }
+  .show-content {
+    margin: 1rem 0;
   }
 }
 @media (max-width: 400px) {
   .show-content {
     margin: 2rem 0;
-    /* overflow: hidden; */
   }
 
   .grids li {
     list-style: none;
+    align-items: center;
   }
   .single-item {
-    width: 100%;
+    justify-content: space-between;
+    align-items: center;
   }
-  .single-item .textss p {
-    text-align: left;
+  .textss {
+    padding: 0.5rem 0;
+  }
+  .textss p {
+    font-size: 0.5rem;
   }
 }

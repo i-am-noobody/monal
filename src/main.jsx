@@ -5,7 +5,6 @@ import App from "./App.jsx";
 import "./index.css";
 
 import SecondPage from "./pages/SecondPage.jsx";
-import FourthPage from "./pages/FourthPage.jsx";
 import FifthPage from "./pages/FifthPage.jsx";
 import SixthPage from "./pages/SixthPage.jsx";
 import ThirdPge from "./pages/ThirdPge.jsx";
@@ -18,7 +17,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/" element={<App />} />
         <Route path="/menu" element={<SecondPage />} />
         <Route path="/gallery" element={<ThirdPge />} />
-        <Route path="/events" element={<FourthPage />} />
         <Route path="/about" element={<FifthPage />} />
         <Route path="/contact" element={<SixthPage />} />
         <Route path="/layout" element={<Layout />} />

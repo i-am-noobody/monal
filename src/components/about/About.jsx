@@ -5,13 +5,13 @@ const About = () => {
   return (
     <>
       <div>
-        <div className="section1">
+        <div className="section-about-us">
           <h1>About Us</h1>
           <p>Listen to our story with US.</p>
         </div>
         <div className="grid">
           <div className="left">
-            <img src="chef4.jpg" />
+            <img src="chef3.jpg" />
           </div>
           <div className="right">
             <h2>Best Food</h2>

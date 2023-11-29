@@ -78,5 +78,10 @@ textarea::placeholder {
 @media (max-width: 400px) {
   .text-container {
     text-align: left;
+    width: 60%;
+    /* margin: 2rem 3rem; */
+  }
+  .form {
+    padding: 3rem;
   }
 }

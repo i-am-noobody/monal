@@ -28,7 +28,7 @@ function Navbars() {
         onClick={() => setMobile(false)}
       >
         <div className="nav-list-holder">
-          <NavLink to="/">
+          <NavLink href="#home">
             <li>Home</li>
           </NavLink>
 

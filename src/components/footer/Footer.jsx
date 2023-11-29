@@ -38,15 +38,17 @@ const Footer = () => {
             <div className="icon">
               <Icon icon="ion:mail" className="custm-icon" />
             </div>
-            <p>support@webxnepal.com.np</p>
+            <p>support@webxnepal.com</p>
           </div>
         </div>
         <div className="footer-about-us">
-          <h2>About Us</h2>
-          <p>
-            We are Australian based restaurant mainly focusing on providing best
-            foods with a good hospitality.
-          </p>
+          <div className="footer-about-us-head">
+            <h2>About Us</h2>
+            <p>
+              We are Australian based restaurant mainly focusing on providing
+              best foods with a good hospitality.
+            </p>
+          </div>
           <div className="footer-links">
             <div className="icon">
               <Icon icon="jam:facebook" className="custm-icon" />

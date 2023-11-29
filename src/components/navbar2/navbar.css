@@ -86,7 +86,19 @@
     width: 100%;
     background-color: black;
     padding-bottom: 2rem;
+    height: 90vh;
   }
+  .nav-links-mobile .nav-list-holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+  }
+  .nav-links .nav-list-holder li {
+    font-size: 4rem;
+  }
+
   ul li {
     padding: 32px;
     width: 100%;
@@ -110,5 +122,19 @@
     align-items: center;
     justify-content: center;
     margin: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .logoDiv {
+    width: 20%;
+  }
+}
+@media (max-width: 400px) {
+  .logoDiv {
+    width: 35%;
+  }
+  .mobile-menu-icon {
+    font-size: 1.2rem;
   }
 }

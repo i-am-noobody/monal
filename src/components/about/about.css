@@ -1,25 +1,54 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin:ital@1&display=swap");
+.section-about-us {
+  height: 30vh;
+  background-image: url(coffee.jpg);
+  background-attachment: fixed;
+  object-position: bottom left;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
 
+.section-about-us h1 {
+  font-size: 50px;
+  color: #9d8730;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* margin: 2rem auto 1rem; */
+}
+.section-about-us p {
+  font-size: 1.6rem;
+  text-align: center;
+  color: white;
+  letter-spacing: 3px;
+}
 .grid {
   height: fit-content;
+  padding: 3rem;
   background-color: black;
-  display: grid;
-  grid-template-columns: 50% 50%;
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 4rem;
+  /* grid-template-columns: 50% 50%; */
 }
 
 .grid .left {
-  margin: 5rem 2rem 0;
+  margin: 3rem 2rem 0;
+  width: 40%;
   /* padding: 5rem 0 2rem 9rem; */
 }
 
 .right {
   /* padding: 5rem 6rem; */
-  margin: 7rem 3rem 0 0rem;
+  margin: 6rem 3rem 0 0rem;
   color: white;
+  width: 40%;
 }
 .right h2 {
   font-family: "Cabin", sans-serif;
-  font-size: 50px;
+  font-size: 3rem;
   letter-spacing: 6px;
 }
 
@@ -37,49 +66,51 @@
 .right span {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-wrap: wrap;
+  text-align: left;
   letter-spacing: 1px;
+  line-height: 1.5;
 }
 
 @media (max-width: 1176px) {
   .grid {
-    grid-template-columns: 30% 55%;
-    column-gap: 5rem;
     height: fit-content;
-  }
-  .grid .left {
-    margin-left: -1rem;
-  }
-  .grid .right {
-    padding: 0 0 0 8rem;
+    gap: 10rem;
   }
 }
-
+@media (max-width: 1000px) {
+  .grid {
+    gap: 8rem;
+  }
+  .left {
+    margin: 3rem 0;
+  }
+  .right {
+    margin: 4rem 0;
+  }
+}
 @media (max-width: 900px) {
-  .grid {
-    grid-gap: 9rem;
-  }
-
-  .grid .right span {
-    /* padding: 12rem 0 0 8rem; */
-    font-size: 0.8rem;
+  .right {
+    margin: 2rem 0;
   }
 }
-
-@media (max-width: 800px) {
+@media (max-width: 840px) {
   .grid {
-    display: block;
+    flex-direction: column;
     padding-top: 2rem;
   }
   .grid .left {
-    display: flex;
     margin-top: 0;
+    width: 90%;
+    display: flex;
     justify-content: center;
+    margin: auto;
   }
 
   .grid .right {
+    width: 100%;
     text-wrap: wrap;
-    padding: 0 2rem;
-    text-align: center;
+    padding: 0 2rem 0 2.4rem;
+    justify-content: center;
   }
   .grid .right h2 {
     margin-top: -4rem;
@@ -97,13 +128,45 @@
   }
 }
 @media (max-width: 600px) {
-  .left img {
-    width: 100%;
+  .grid {
+    justify-content: space-between;
   }
-  .right h2 {
-    font-size: 2rem;
+  .grid .left img {
+    width: 80%;
+  }
+}
+@media (max-width: 500px) {
+  .grid {
+    gap: 4rem;
   }
   .grid .right {
-    padding-bottom: 2rem;
+    padding: 2rem 0;
+  }
+}
+
+@media (max-width: 413px) {
+  .grid {
+    gap: 5rem;
+    padding: 3rem 1rem;
+  }
+  .grid .left img {
+    width: 80%;
+  }
+
+  .grid .right h2 {
+    font-size: 2rem;
+    text-align: left;
+  }
+  .grid .right p {
+    font-size: 1.4rem;
+    text-align: left;
+  }
+  .grid .right span {
+    text-align: left;
+    letter-spacing: 0;
+  }
+  .lines {
+    width: 90%;
+    margin: 1rem auto;
   }
 }

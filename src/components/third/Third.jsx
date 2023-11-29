@@ -10,25 +10,75 @@ const Third = () => {
           <p>Pictures of Various events</p>
         </div>
         <div className="rights-container">
-          <div class="gallery">
-            <figure class="gallery__item gallery__item--1">
-              <img src="image4.jpg" class="gallery__img" alt="Image 1" />
-            </figure>
-            <figure class="gallery__item gallery__item--2">
-              <img src="image3.jpg" class="gallery__img" alt="Image 2" />
-            </figure>
-            <figure class="gallery__item gallery__item--3">
-              <img src="image5.jpg" class="gallery__img" alt="Image 3" />
-            </figure>
-            <figure class="gallery__item gallery__item--4">
-              <img src="image6.jpg" class="gallery__img" alt="Image 4" />
-            </figure>
-            <figure class="gallery__item gallery__item--5">
-              <img src="image1.jpg" class="gallery__img" alt="Image 5" />
-            </figure>
-            <figure class="gallery__item gallery__item--6">
-              <img src="image8.jpg" class="gallery__img" alt="Image 6" />
-            </figure>
+          <div class="container">
+            <div class="image-gallery">
+              <div class="column">
+                <div class="image-item">
+                  <img src="anni.jpg" alt="" />
+                  <div class="overlay">
+                    <span>Anniversary Surprise</span>
+                  </div>
+                </div>
+                <div class="image-item">
+                  <img src="image4.jpg" alt="" />
+                  <div class="overlay">
+                    <span>Foods</span>
+                  </div>
+                </div>
+                <div class="image-item">
+                  <img src="image2.jpg" alt="" />
+                  <div class="overlay">
+                    <span>Friends Gathering</span>
+                  </div>
+                </div>
+              </div>
+              <div class="column" id="first">
+                <div class="image-item">
+                  <img src="image1.jpg" alt="" />
+                  <div class="overlay">
+                    <span>Food is preparing</span>
+                  </div>
+                </div>
+                <div class="image-item">
+                  <img src="image5.jpg" alt="" />
+                  <div class="overlay">
+                    <span>Eating with Friends</span>
+                  </div>
+                </div>
+                <div class="image-item">
+                  <img src="image9.jpeg" alt="" />
+                  <div class="overlay">
+                    <span>Foods</span>
+                  </div>
+                </div>
+              </div>
+              <div class="column" id="second">
+                <div class="image-item">
+                  <img src="image7.jpg" alt="" />
+                  <div class="overlay">
+                    <span>Friends</span>
+                  </div>
+                </div>
+                <div class="image-item">
+                  <img src="dinner.jpg" alt="" />
+                  <div class="overlay">
+                    <span>Dinner</span>
+                  </div>
+                </div>
+                <div class="image-item">
+                  <img src="bd.jpg" alt="" />
+                  <div class="overlay">
+                    <span>Birthday Celebration</span>
+                  </div>
+                </div>
+                <div class="image-item">
+                  <img src="anni.jpg" alt="" />
+                  <div class="overlay">
+                    <span>Aniversary Celebration</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
