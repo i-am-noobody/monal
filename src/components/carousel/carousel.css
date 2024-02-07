@@ -44,7 +44,7 @@
   height: max-content;
 }
 .ant-carousel .slick-dots {
-  margin: 1rem 0;
+  margin-bottom: 1rem;
 }
 .image-container {
   width: 40%;
