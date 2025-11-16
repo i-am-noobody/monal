@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin:ital@1&display=swap");
 .section-about-us {
   height: 30vh;
-  background-image: url(coffee.jpg);
+  background-image: url("/coffee.jpg");
   background-attachment: fixed;
   object-position: bottom left;
   padding: 10px;

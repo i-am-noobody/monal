@@ -1,6 +1,6 @@
 .section1 {
   height: 30vh;
-  background-image: url(sec2.jpeg);
+  background-image: url("/sec2.jpeg");
   background-size: fit-content;
   background-attachment: fixed;
   padding: 10px;

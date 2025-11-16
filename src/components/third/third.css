@@ -6,7 +6,7 @@
 
 .lefts-container {
   height: 30vh;
-  background-image: url(bg2.jpg);
+  background-image: url("/bg2.jpg");
   background-size: fit-content;
   background-attachment: fixed;
   padding: 2rem;

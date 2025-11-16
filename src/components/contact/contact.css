@@ -5,7 +5,7 @@
 
 .top-container {
   height: 30vh;
-  background-image: url(a.jpg!d);
+  background-image: url("/a.jpg");
   background-color: rgba(0, 0, 0, 0.5);
   background-position: 50% 50%;
   /* background-size: fit-content; */
