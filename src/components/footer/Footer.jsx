@@ -38,7 +38,7 @@ const Footer = () => {
             <div className="icon">
               <Icon icon="ion:mail" className="custm-icon" />
             </div>
-            <p>support@webxnepal.com</p>
+            <p>support@sandeep.com</p>
           </div>
         </div>
         <div className="footer-about-us">
